@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>נגיני גר</title>
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+  </head>
+  <body>
+    <!--form in the layout of a table with 14 rows the first should be the table header and with 4 columns and a submit button to save it for now to local storage -->
+    <table>
+      <thead>
+        <th>הערות</th>
+        <th>משך</th>
+        <th>שם המלחן</th>
+        <th>שמות הנגינים</th>
+      </thead>
+      <tbody id="insertTableRow"></tbody>
+    </table>
+    <!-- Add a new song -->
+    <button id="addSongButton" type="button" onclick="addNewSong()">
+      Add new song
+    </button>
+    <button
+      id="saveDataButton"
+      type="submit"
+      name="submit"
+      onclick="saveData(event)"
+    >
+      Save
+    </button>
+    <script type="module" src="index.js"></script>
+  </body>
+</html>
